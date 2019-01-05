@@ -1,6 +1,6 @@
 import React from "react"
 import Card from "./card.js"
-import cardGridStyles from "./card-grid.module.css"
+import cardListStyles from "./card-list.module.css"
 
 export default ({cardItems}) => {
     const createCards = () => {
@@ -8,7 +8,7 @@ export default ({cardItems}) => {
             <Card {...cardItem} />
         ]);
     }
-    return (<div className={cardGridStyles.cardGrid}>
+    return (<div className={cardListStyles.cardList}>
         {createCards()}
     </div>);
 }
